@@ -3,6 +3,7 @@ import './App.css';
 import List from "./List"
 import FunContext from "./FunContext"
 import AstroComponent from "./AstroComponent"
+import ListForm from "./ListForm"
 
 class App extends Component {
 
@@ -10,9 +11,9 @@ class App extends Component {
     super(props)
     this.state = {
       people: [
-        {name: "Jane", age: 34},
-        {name: "Joe", age: 24},
-        {name: "Jimmy", age: 14}
+        {name: "Jane"},
+        {name: "Joe"},
+        {name: "Jimmy"}
       ],
       response: ["arrayItemOne"]
     }
@@ -38,7 +39,7 @@ class App extends Component {
 
     const contextValue = {
       contextData: this.state.response,
-      contextPeople: this.state.people
+      contextPeople: this.state.people,
     }
 
     return (
@@ -47,6 +48,7 @@ class App extends Component {
        <h1>List Fun!</h1>
        <h2>Here is a list of people: </h2>
        <List/>
+       <ListForm/>
        <AstroComponent/>
       </div>
       </FunContext.Provider>

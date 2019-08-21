@@ -12,7 +12,6 @@ export default class List extends Component{
             <ListItem
             key={i}
             name={item.name}
-            age={item.age}
             />
             )
         })

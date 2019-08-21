@@ -4,7 +4,7 @@ export default class ListItem extends Component{
     render(){
         return(
             <div>
-                {this.props.name} | {this.props.age}
+                {this.props.name} 
             </div>
         )
     }
